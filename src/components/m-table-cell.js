@@ -101,7 +101,7 @@ export default class MTableCell extends React.Component {
       <TableCell
         {...cellProps}
         style={this.getStyle()}
-        align={['numeric'].indexOf(this.props.columnDef.type) !== -1 ? "right" : "left"}
+        align={['numeric'].indexOf(this.props.columnDef.type) !== -1 ? "right" : "center"}
         onClick={this.handleClickCell}
       >
         {this.props.children}
